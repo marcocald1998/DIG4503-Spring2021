@@ -32,9 +32,9 @@ const[rating, setRating] = useState("");
             />
             <input 
             type = "text" 
-            placeholder="Location" 
-            value={location} 
-            onChange={(event) => setLocation(event.target.value)}
+            placeholder="Icecream Brand" 
+            value={brand} 
+            onChange={(event) => setBrand(event.target.value)}
             />
             <input 
             type = "text" 
@@ -45,7 +45,7 @@ const[rating, setRating] = useState("");
             <br></br>
             <button onClick = {() => {deleteIcecream()}}>Delete Icecream Flavor</button>
             {
-            <p> Deleted: {rank} {flavor} {location} {rating}</p>
+            <p> Deleted: {rank} {flavor} {brand} {rating}</p>
         }
         </div>
     );

@@ -7,11 +7,11 @@ const[rank, setRank] = useState("");
 const[flavor, setFlavor] = useState("");    
 const[brand, setBrand] = useState("");
 const[rating, setRating] = useState("");
-
+1
     const getIcecream = async() => {
         const response = await Axios.get("http://localhost:45040/flavors/" + rank, {
             flavor:  flavor,
-            location: location,
+            brand: brand,
             rating: rating
         });
         console.log(response.data);
@@ -32,7 +32,7 @@ const[rating, setRating] = useState("");
             />
             <input 
             type = "text" 
-            placeholder="Brand" 
+            placeholder="Icecream Brand" 
             value={brand} 
             onChange={(event) => setBrand(event.target.value)}
             />
